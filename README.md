@@ -1,18 +1,18 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bbf28a84-4bdb-407b-a2fa-32628d27fa3d/deploy-status)](https://app.netlify.com/sites/eleventy-netlify-boilerplate/deploys)
 
-# Eleventy Netlify Boilerplate
+# Church House - Panoramic Tour
 
-## What is it?
+A test of 11ty static site generator, and a panoramic tour of my favourite place.
 
-A simple template for building a fast, static website using the [Eleventy](https://www.11ty.io/) static site generator, with [Netlify CMS](https://www.netlifycms.org/) baked-in, ready to deploy to [Netlify](https://www.netlify.com) in a couple of clicks.
+Based on the Eleventy Netlify Boilerplate by Dan Urbanowicz - https://github.com/danurbanowicz/eleventy-netlify-boilerplate.git
 
-Use it as a starter for your own projects or as an easy way to get started building websites with Eleventy.
+Built on PC so commands are prefixed with npx, ie:
 
-Based on the [Eleventy Base Blog](https://github.com/11ty/eleventy-base-blog) repo (see there for additional info on Eleventy usage).
+```
+npx eleventy --serve
+```
 
-🔥 **This project is featured on Netlify's official [template showcase](https://templates.netlify.com/template/eleventy-netlify-boilerplate/)** 🔥
-
-## [Demo Site](https://eleventy-netlify-boilerplate.netlify.com/)
+Original README below:
 
 ## Features
 
@@ -112,7 +112,5 @@ DEBUG=* npx eleventy
 ```
 
 ## Bug reports, feature requests, etc
-
-This is an ongoing project and I welcome contributions. Feel free to submit a PR.
 
 If you need any help with setting up Netlify CMS, you can reach out to the Netlify team in the [Netlify CMS Gitter](https://gitter.im/netlify/netlifycms).

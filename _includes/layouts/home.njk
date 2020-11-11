@@ -3,12 +3,17 @@ layout: layouts/base.njk
 section: home
 ---
 
-{% set slidelist = collections.slides %}
-{% include "components/slideslist.njk" %}
+<div class="house floor1">
+	<img src="static/img/delineo-_web_banners_deliver.webp" alt="">
+	<a href="#" data-tooltip="Living room" class="pano-point livingRoom"></a>
+	<a href="#" data-tooltip="Kitchen" class="pano-point kitchen"></a>
+
+	<iframe width="100%" height="480px" src="https://poly.google.com/view/6kZo0HjevLU/embed?chrome=min" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" ></iframe>
+</div>
 
 {{ layoutContent | safe }}
 
 {% set js %}
-	{% include "assets/js/glide.min.js" %}
+
 {% endset %}
 <script>{{ js | jsmin | safe }}</script>
