@@ -1,3 +1,5 @@
+// import '@google/model-viewer';
+
 if (window.netlifyIdentity) {
   window.netlifyIdentity.on("init", user => {
     if (!user) {
@@ -8,10 +10,21 @@ if (window.netlifyIdentity) {
   });
 }
 
-// Load glide if element exists
-var element = document.getElementById("glide");
+livingRoom.addEventListener('click', () => {
+	document.getElementById("iframeContainer").src="https://poly.google.com/view/6kZo0HjevLU/embed";
+	window.location.hash = 'lightbox';
+});
 
-//If it isn't "undefined" and it isn't "null", then it exists.
-if(typeof(element) != 'undefined' && element != null){
-	new Glide('.glide').mount()
-}
+kitchen.addEventListener('click', () => {
+	document.getElementById("iframeContainer").src="https://poly.google.com/view/0QGwh1u5m3H/embed";
+	window.location.hash = 'lightbox';
+});
+
+hallway.addEventListener('click', () => {
+	document.getElementById("iframeContainer").src="https://poly.google.com/view/cS2BErpQ3EG/embed";
+	window.location.hash = 'lightbox';
+});
+
+// verticalCam.addEventListener('click', () => {
+// 	modelViewer.cameraOrbit="0.78deg 133deg 3134m";
+// });

@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title or renderData.title or metadata.title }}</title>
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
   {% set css %}
     {% include "assets/css/inline.css" %}

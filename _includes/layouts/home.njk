@@ -2,23 +2,32 @@
 layout: layouts/base.njk
 section: home
 ---
-
+<div class="controls">
+	<button id="verticalCam">
+		Floor 1
+	</button>
+</div>
 <div class="house floor1">
-	<img src="static/img/delineo-_web_banners_deliver.webp" alt="">
-	<a href="#livingRoom" data-tooltip="Living room" class="pano-point livingRoom"></a>
-	<a href="#kitchen" data-tooltip="Kitchen" class="pano-point kitchen"></a>
+	<!--<img src="static/img/delineo-_web_banners_deliver.webp" alt="">-->
+	<model-viewer src="static/img/model.glb" environment-image="static/img/aircraft_workshop_01_1k.hdr" camera-orbit="0.7826deg 133.2deg 3135m" field-of-view="45deg">
+
+	    <button id="hallway" class="Hotspot" slot="hotspot-2" data-position="-558.6646311124107m 593.4314952326536m -51.4375m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Hallway</div>
+	    </button>
+	    <button id="kitchen" class="Hotspot" slot="hotspot-3" data-position="183.55543600723672m 615.4701829925116m -51.437500000000455m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">kitchen</div>
+	    </button>
+	    <button id="livingRoom" class="Hotspot" slot="hotspot-5" data-position="102.44144225973548m -69.46922678463261m -51.4375m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">lounge</div>
+	    </button>
+
+	</model-viewer>
 </div>
 
-<div class="lightbox" id="livingRoom">
+<div class="lightbox" id="lightbox">
 	<span>
-		<a href="#" class="close"></a>
-		<iframe width="100%" height="100%" src="https://poly.google.com/view/6kZo0HjevLU/embed" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" ></iframe>
-	</span>
-</div>
-<div class="lightbox" id="kitchen">
-	<span>
-		<a href="#" class="close"></a>
-		<iframe width="100%" height="100%" src="https://poly.google.com/view/0QGwh1u5m3H/embed?chrome=min" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" ></iframe>
+		<a href="#" class="close" onClick='document.getElementById("iframeContainer").src="";'></a>
+		<iframe width="100%" height="100%" frameborder="0" style="border:none;" allowvr="yes" allow="vr; xr; accelerometer; magnetometer; gyroscope; autoplay;" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" id="iframeContainer"></iframe>
 	</span>
 </div>
 
