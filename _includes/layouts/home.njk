@@ -2,23 +2,70 @@
 layout: layouts/base.njk
 section: home
 ---
-<div class="controls">
-	<button id="verticalCam">
-		Floor 1
-	</button>
-</div>
-<div class="house floor1">
-	<!--<img src="static/img/delineo-_web_banners_deliver.webp" alt="">-->
-	<model-viewer src="static/img/model.glb" environment-image="static/img/aircraft_workshop_01_1k.hdr" camera-orbit="0.7826deg 133.2deg 3135m" field-of-view="45deg">
-
-	    <button id="hallway" class="Hotspot" slot="hotspot-2" data-position="-558.6646311124107m 593.4314952326536m -51.4375m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
+<div class="house">
+	<model-viewer src="static/img/ChurchHouse-Full-rotate.glb" camera-controls environment-image="static/img/aircraft_workshop_01_1k.hdr" camera-orbit="36.89deg 73.78deg 380.3m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 380.3m">
+		<!-- Floor 1 -->
+		<button class="Hotspot floor1Hotspot" slot="hotspot-1" data-position="-45.56097094205057m -29.60312122082986m -84.84973399369554m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Sitting room</div>
+	    </button>
+	    <button id="kitchen" class="Hotspot floor1Hotspot" slot="hotspot-2" data-position="26.46875845371177m -29.603121220829813m -84.18104375585503m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Kitchen</div>
+	    </button>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-3" data-position="-14.953088387152206m -29.603121220829813m -70.90619874013223m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Landing</div>
+	    </button>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-4" data-position="-43.79077989604322m -29.603121220829756m -37.77377365062651m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Dining Room</div>
+	    </button>
+	    <button id="livingRoom" class="Hotspot floor1Hotspot" slot="hotspot-5" data-position="22.92784581637231m -29.603121220829753m -12.574427618178888m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Lounge</div>
+	    </button>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-6" data-position="-42.58145237855993m -29.60312122082975m 7.926225193460958m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Study</div>
+	    </button>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-7" data-position="-54.83310381775563m -29.60312122082983m 43.731221680297786m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Toilet</div>
+	    </button>
+	    <button id="hallway"class="Hotspot floor1Hotspot" slot="hotspot-8" data-position="-6.344767581875843m -29.603121220829784m 46.34369057519825m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
 	        <div class="HotspotAnnotation">Hallway</div>
 	    </button>
-	    <button id="kitchen" class="Hotspot" slot="hotspot-3" data-position="183.55543600723672m 615.4701829925116m -51.437500000000455m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
-	        <div class="HotspotAnnotation">kitchen</div>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-9" data-position="-55.88635904818266m -29.603121220829742m 24.04035453389865m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Study Balcony</div>
 	    </button>
-	    <button id="livingRoom" class="Hotspot" slot="hotspot-5" data-position="102.44144225973548m -69.46922678463261m -51.4375m" data-normal="0m 0m 1m" data-visibility-attribute="visible">
-	        <div class="HotspotAnnotation">lounge</div>
+	    <button class="Hotspot floor1Hotspot" slot="hotspot-10" data-position="51.390334348414896m -26.898820159337998m 39.321673268503446m" data-normal="0m 2.220446049250313e-16m 1m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Balcony</div>
+	    </button>
+
+	    <!-- Floor 0 -->
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-11" data-position="-51.18875598870358m -53.109078047892645m -87.5268738271574m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Utility room</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-12" data-position="24.53553777714265m -53.10907804789274m -86.52105212858356m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Master bedroom</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-13" data-position="-19.43900478034896m -53.109078047892645m -96.36768129783897m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Hallway - stairs</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-14" data-position="-7.488837279311738m -53.10907804789272m -37.71111685295832m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Hallway</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-15" data-position="-45.20478905372741m -53.10907804789268m -50.303111972575614m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Bedroom 1</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-16" data-position="-42.334241156634775m -53.109078047892666m 6.205102849534981m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Bedroom 2</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-17" data-position="40.43886618719384m -53.10907804789268m -47.65201601048489m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">En suite</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-18" data-position="32.323331900986176m -53.10907804789267m -5.356541331070254m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Computer room</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-19" data-position="-40.76108747960694m -53.10907804789266m 43.37099387752849m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Toilet</div>
+	    </button>
+	    <button class="Hotspot floor0Hotspot" slot="hotspot-20" data-position="27.483192471104715m -53.10907804789275m 39.830412519239545m" data-normal="0m 1m -2.220446049250313e-16m" data-visibility-attribute="visible">
+	        <div class="HotspotAnnotation">Games room</div>
 	    </button>
 
 	</model-viewer>

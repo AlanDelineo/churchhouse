@@ -9,6 +9,17 @@
 			<h1>
 				{{ metadata.title }}
 			</h1>
+			<div class="controls">
+				<button id="verticalCam">
+					Birds Eye view
+				</button>
+				<button id="startCam">
+					Reset view
+				</button>
+				<button id="viewAll" class="slide selected" onclick="switchSrc(this, 'ChurchHouse-Full-rotate')">View all</button>
+				<button id="viewFloor1" class="slide" onclick="switchSrc(this, 'ChurchHouse-Floor1-rotate')">Floor 1</button>
+				<button id="viewFloor0" class="slide" onclick="switchSrc(this, 'ChurchHouse-Floor0-rotate')">Floor 0</button>
+			</div>
 		</header>
 
 		<main>
