@@ -14,15 +14,73 @@ livingRoom.addEventListener('click', () => {
 	document.getElementById("iframeContainer").src="https://poly.google.com/view/6kZo0HjevLU/embed";
 	window.location.hash = 'lightbox';
 });
-
 kitchen.addEventListener('click', () => {
 	document.getElementById("iframeContainer").src="https://poly.google.com/view/0QGwh1u5m3H/embed";
 	window.location.hash = 'lightbox';
 });
-
 hallway.addEventListener('click', () => {
 	document.getElementById("iframeContainer").src="https://poly.google.com/view/cS2BErpQ3EG/embed";
 	window.location.hash = 'lightbox';
+});
+sittingroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/1ewTw1_cdP4/embed";
+  window.location.hash = 'lightbox';
+});
+landing.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/7WJQcTd_FZ2/embed";
+  window.location.hash = 'lightbox';
+});
+diningroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/c2SJ2pxoKT1/embed";
+  window.location.hash = 'lightbox';
+});
+study.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/fW2xZXLnbDn/embed";
+  window.location.hash = 'lightbox';
+});
+toilet.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/cV8VMZ_DXD5/embed";
+  window.location.hash = 'lightbox';
+});
+gallery.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/eaB_E7zazpz/embed";
+  window.location.hash = 'lightbox';
+});
+utility.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/fVk9qBN-8v6/embed";
+  window.location.hash = 'lightbox';
+});
+masterbedroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/9j-P_ngv_T9/embed";
+  window.location.hash = 'lightbox';
+});
+hallwaystairs.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/dd_jruCux13/embed";
+  window.location.hash = 'lightbox';
+});
+hallwaydownstairs.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/atHF4d6vuHG/embed";
+  window.location.hash = 'lightbox';
+});
+bedroom1.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/6udKN_N9Z-C/embed";
+  window.location.hash = 'lightbox';
+});
+bedroom2.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/aRWhoAsnQmp/embed";
+  window.location.hash = 'lightbox';
+});
+computerroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/93lGubbu_U6/embed";
+  window.location.hash = 'lightbox';
+});
+bathroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/9IbCutXez_2/embed";
+  window.location.hash = 'lightbox';
+});
+gamesroom.addEventListener('click', () => {
+  document.getElementById("iframeContainer").src="https://poly.google.com/view/3HZyViDl8O9/embed";
+  window.location.hash = 'lightbox';
 });
 
 const model = document.querySelector("model-viewer");
