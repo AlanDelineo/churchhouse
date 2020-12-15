@@ -1,0 +1,14 @@
+<div class="col2">
+	{%- for person in peoplelist -%}
+	<div class="person">
+		<a href="{{ person.url | url }}">
+			<h2>{{ person.data.title }}</h2>
+			{% if person.data.image %}
+				<img src="{{ person.data.image }}" alt="{{ person.data.title }} mugshot">
+			{% else %}
+				<img src="/static/img/delineo-_web_banners_deliver.webp" alt="{{ person.data.title }} mugshot">
+			{% endif %}
+		</a>
+	</div>
+	{%- endfor -%}
+</div>
